@@ -17,18 +17,21 @@ Frontends:
 
 - Agda
 - Lean
-- Rocq using MetaRocq
+- Rocq using [MetaRocq](https://metarocq.github.io/) and [ConCert](https://github.com/AU-COBRA/ConCert)
 
 Backends:
 
-- CakeML
-- C using CertiCoq
-- Rust
+- [CakeML](https://cakeml.org/)
+- C using [CertiCoq](https://certicoq.org/) and then x86,ARM, RISCV using [CompCert](https://compcert.org/).
+- Rust using ConCert
 - OCaml, **verified**
+- Wasm, **verified** using [CertiRocq-wasm](https://github.com/womeier/certicoqwasm)
 
 Team Members: James Chapman, Simon Dima, Lucas Escot, Yannick Forster, Orestis Melkonian, Eske Nielsen, Matthieu Sozeau, Bas Spitters.
 
 Contributors: Hugo Segoufin-Chollet.
+
+Supported by: INRIA, Aarhus University, [IOG](https://iohk.io/), [Ethereum](https://verified-zkevm.org/).
 
 <center>
 <small><small>Website based on <a href="https://github.com/basicpage/basicpage.github.io">this basic page template</a>.</small></small>
