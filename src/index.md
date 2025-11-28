@@ -2,7 +2,7 @@
 title: Peregrine Project
 author: Peregrine Project
 description-meta: Framework for verified code generation from proof assistants
-picture: peregrine-falcon.png
+picture: peregrine-box.png
 ---
 
 The Peregrine Project provides a unified middle-end for code generation from proof assistants.

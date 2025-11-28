@@ -87,7 +87,7 @@ header {
 }
 
 header img {
-  max-width: 200px;
+  max-width: 300px;
 }
 
 header h2 {
@@ -269,7 +269,7 @@ div.note > div.title p::before {
 }
 
 .round-image {
-    border-radius: 50%; /* This makes the image round */
+    /* border-radius: 50%; /\* This makes the image round *\/ */
     object-fit: cover;  /* Ensures the image covers the entire area without distortion */
 }
 
