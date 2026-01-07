@@ -27,6 +27,8 @@ Backends:
 - OCaml, **verified**
 - Wasm, **verified** using [CertiRocq-wasm](https://github.com/womeier/certicoqwasm)
 
+[Sources](https://github.com/peregrine-project)
+
 Team Members: James Chapman, Simon Dima, Lucas Escot, Yannick Forster, Orestis Melkonian, Eske Nielsen, Matthieu Sozeau, Bas Spitters.
 
 Contributors: Hugo Segoufin-Chollet.
