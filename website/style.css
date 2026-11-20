@@ -81,6 +81,7 @@ hr {
 }
 
 table {
+  width: 100%;
   border-collapse: collapse;
   margin: 8px 0 16px;
   font-size: 0.95em;
