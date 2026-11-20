@@ -30,7 +30,7 @@ All backends are part of [peregrine-tool](https://github.com/peregrine-project/p
 |---------|----------|--------------|
 | C | [CertiRocq](https://certicoq.org/), then [CompCert](https://compcert.org/) for x86, ARM, RISC-V | <span class="part">partially verified</span> |
 | Wasm | [CertiRocq-wasm](https://github.com/womeier/certicoqwasm) | <span class="ok">verified</span> |
-| LLVM *(experimental)* | [Vellvm](https://github.com/vellvm/vellvm) | <span class="part">partially verified</span> |
+| LLVM *(experimental)* | [Vellvm](https://github.com/vellvm/vellvm) | <span class="ok">verified</span> |
 | OCaml | Malfunction | <span class="ok">verified</span> |
 | CakeML | [CakeML](https://cakeml.org/) compiler | <span class="ok">verified</span> |
 | Rust | ConCert | <span class="part">partially verified</span> |
