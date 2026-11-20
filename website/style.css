@@ -70,16 +70,49 @@ ul {
   padding-left: 20px;
 }
 
+main h3 {
+  margin-top: 28px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 36px 0 24px;
+}
+
 table {
   border-collapse: collapse;
-  margin: 6px 0 16px;
+  margin: 8px 0 16px;
+  font-size: 0.95em;
+}
+
+/* pandoc emits fixed column widths for long rows; let content decide */
+table col {
+  width: auto !important;
 }
 
 th, td {
-  padding: 4px 12px;
-  border-bottom: 1px solid #ddd;
+  padding: 6px 14px;
+  border-bottom: 1px solid #e5e5e5;
   text-align: left;
+  vertical-align: top;
 }
+
+th {
+  border-bottom: 2px solid #56473d;
+}
+
+/* verification badges */
+.ok, .part, .no {
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.ok { background: #e2f3e4; color: #1e6b2e; }
+.part { background: #fcefd6; color: #8a5a00; }
+.no { background: #eeeeee; color: #555; }
 
 /*** HEADER ***/
 

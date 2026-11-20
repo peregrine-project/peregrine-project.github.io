@@ -14,29 +14,33 @@ and some of the frontends and backends are.
 It is based on an intermediate language called lambda box.
 The middle end includes verified optimization passes, such as inlining, constant lifting, and unboxing.
 
-Frontends:
+### Frontends
 
-| Frontend | Verification | Repository |
-|----------|--------------|------------|
-| Rocq, using [MetaRocq](https://metarocq.github.io/) and [ConCert](https://github.com/AU-COBRA/ConCert) | **verified** erasure | [peregrine-tool](https://github.com/peregrine-project/peregrine-tool) |
-| Agda | unverified | [agda2lambox](https://github.com/agda/agda2lambox) |
-| Lean | partially verified, against [Lean4Lean](https://github.com/digama0/lean4lean) | [lean-to-lambdabox](https://github.com/peregrine-project/lean-to-lambdabox) |
+| Frontend | Based on | Verification | Repository |
+|----------|----------|--------------|------------|
+| Rocq | [MetaRocq](https://metarocq.github.io/), [ConCert](https://github.com/AU-COBRA/ConCert) | <span class="ok">verified</span> | [peregrine-tool](https://github.com/peregrine-project/peregrine-tool) |
+| Agda | — | <span class="no">unverified</span> | [agda2lambox](https://github.com/agda/agda2lambox) |
+| Lean | — | <span class="part">partially verified</span> | [lean-to-lambdabox](https://github.com/peregrine-project/lean-to-lambdabox) |
 
-Backends, all in [peregrine-tool](https://github.com/peregrine-project/peregrine-tool):
+### Backends
+
+All backends are part of [peregrine-tool](https://github.com/peregrine-project/peregrine-tool).
 
 | Backend | Based on | Verification |
 |---------|----------|--------------|
-| C, then x86, ARM, RISC-V using [CompCert](https://compcert.org/) | [CertiRocq](https://certicoq.org/) | partially verified |
-| Wasm | [CertiRocq-wasm](https://github.com/womeier/certicoqwasm) | **verified** |
-| LLVM (experimental) | [Vellvm](https://github.com/vellvm/vellvm) | partially verified |
-| OCaml | verified extraction to Malfunction | **verified** |
-| [CakeML](https://cakeml.org/) | CakeML compiler | **verified** |
-| Rust | ConCert | partially verified |
-| Elm | ConCert | typed erasure verified |
-| Lean | | unverified |
-| F#, Koka (experimental) | | unverified |
+| C | [CertiRocq](https://certicoq.org/), then [CompCert](https://compcert.org/) for x86, ARM, RISC-V | <span class="part">partially verified</span> |
+| Wasm | [CertiRocq-wasm](https://github.com/womeier/certicoqwasm) | <span class="ok">verified</span> |
+| LLVM *(experimental)* | [Vellvm](https://github.com/vellvm/vellvm) | <span class="part">partially verified</span> |
+| OCaml | Malfunction | <span class="ok">verified</span> |
+| CakeML | [CakeML](https://cakeml.org/) compiler | <span class="ok">verified</span> |
+| Rust | ConCert | <span class="part">partially verified</span> |
+| Elm | ConCert | <span class="part">partially verified</span> |
+| Lean | — | <span class="no">unverified</span> |
+| F#, Koka *(experimental)* | — | <span class="no">unverified</span> |
 
 [Sources](https://github.com/peregrine-project)
+
+* * *
 
 **Team Members:**
 
