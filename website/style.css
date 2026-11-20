@@ -70,6 +70,17 @@ ul {
   padding-left: 20px;
 }
 
+table {
+  border-collapse: collapse;
+  margin: 6px 0 16px;
+}
+
+th, td {
+  padding: 4px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
 /*** HEADER ***/
 
 header {
