@@ -64,5 +64,5 @@ Supported by: INRIA, Aarhus University, [IOG](https://iohk.io/), [Ethereum](http
 <center>
 <small><small>Website based on <a href="https://github.com/basicpage/basicpage.github.io">this basic page template</a>.</small></small>
 <br>
-<small><small>Last updated: November 20, 2026.</small></small>
+<small><small>Last updated: November 23, 2026.</small></small>
 </center>

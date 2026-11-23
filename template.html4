@@ -41,8 +41,11 @@ $endif$
 $endif$
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.svg">
+  <!-- apply a saved dark theme before first paint -->
+  <script>try { if (localStorage.getItem('theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body>
+  <button id="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false"><i class="fas fa-moon"></i></button>
   <header>
     $if(picture)$
       $if(link-back)$
@@ -128,5 +131,22 @@ $endif$
     $include-after$
     $endfor$
   </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.getElementById('theme-toggle');
+      function apply(theme) {
+        root.dataset.theme = theme;
+        button.setAttribute('aria-pressed', theme === 'dark');
+        button.firstElementChild.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      }
+      apply(root.dataset.theme === 'dark' ? 'dark' : 'light');
+      button.addEventListener('click', function () {
+        var theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        apply(theme);
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>

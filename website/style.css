@@ -5,6 +5,25 @@
   --mainbg: transparent;
   --navlink: #56473d;
   --navborder: #56473d;
+  --text: #4E5357;
+  --heading: #373B3E;
+  --link: #3a6eb1;
+  --link-hover: #71acf8;
+  --rule: #e0e0e0;
+  --rule-strong: #56473d;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1c1e20;
+  --navlink: #c2b4a8;
+  --navborder: #c2b4a8;
+  --text: #c8cbce;
+  --heading: #e6e7e9;
+  --link: #7eaaea;
+  --link-hover: #a9c7f3;
+  --rule: #3a3d41;
+  --rule-strong: #8c7f75;
 }
 
 /*** GENERAL ***/
@@ -35,7 +54,7 @@ body {
   line-height: 1.6;
   padding: 2rem;
   word-wrap: break-word;
-  color: #4E5357;
+  color: var(--text);
   /* color: #2e2e2e; /\* Dark gray font color *\/ */
 }
 
@@ -43,16 +62,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     /* font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
     font-family: "Lato", sans-serif; /* Default font for headings */
-    color: #373B3E; /* Heading color (same as body text) */
+    color: var(--heading);
 }
 
 /* Optional: Background color for content areas */
 .content {
-    background-color: #ffffff; /* White background for content areas */
+    background-color: var(--bg);
 }
 
 a {
-  color: #3a6eb1;
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -62,7 +81,7 @@ a.invisible {
 }
 
 a:active, a:hover {
-  color: #71acf8;
+  color: var(--link-hover);
   outline: 0;
 }
 
@@ -76,7 +95,7 @@ main h3 {
 
 hr {
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--rule);
   margin: 36px 0 24px;
 }
 
@@ -94,13 +113,13 @@ table col {
 
 th, td {
   padding: 6px 14px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--rule);
   text-align: left;
   vertical-align: top;
 }
 
 th {
-  border-bottom: 2px solid #56473d;
+  border-bottom: 2px solid var(--rule-strong);
 }
 
 /*** HEADER ***/
@@ -327,6 +346,32 @@ summary h1 {
 /* Rotate arrow when <details> is open */
 details[open] .arrow {
     transform: rotate(90deg); /* Rotate arrow to indicate expanded state */
+}
+
+/*** THEME TOGGLE ***/
+
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: none;
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  color: var(--heading);
+  border-color: var(--text);
+}
+
+/* the logo has an opaque white background */
+[data-theme="dark"] header img {
+  border-radius: 8px;
 }
 
 /*** SMALL SCREENS ***/
