@@ -59,7 +59,7 @@ All backends are part of [peregrine-tool](https://github.com/peregrine-project/p
 - Lucas Escot (TU Delft)
 - Hugo Segoufin-Chollet (INRIA, ENS Lyon)
 
-Supported by: INRIA, Aarhus University, [IOG](https://iohk.io/), [Ethereum](https://verified-zkevm.org/).
+Supported by: INRIA, Aarhus University, [IOG](https://iohk.io/), [Ethereum](https://verified-zkevm.org/), [AIforMath](https://www.renaissancephilanthropy.org/hydropus-verified-compilation-to-multiple-backends-for-lean).
 
 <center>
 <small><small>Website based on <a href="https://github.com/basicpage/basicpage.github.io">this basic page template</a>.</small></small>
