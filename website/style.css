@@ -103,18 +103,6 @@ th {
   border-bottom: 2px solid #56473d;
 }
 
-/* verification badges */
-.ok, .part, .no {
-  padding: 1px 8px;
-  border-radius: 10px;
-  font-size: 0.85em;
-  white-space: nowrap;
-}
-
-.ok { background: #e2f3e4; color: #1e6b2e; }
-.part { background: #fcefd6; color: #8a5a00; }
-.no { background: #eeeeee; color: #555; }
-
 /*** HEADER ***/
 
 header {
@@ -339,4 +327,18 @@ summary h1 {
 /* Rotate arrow when <details> is open */
 details[open] .arrow {
     transform: rotate(90deg); /* Rotate arrow to indicate expanded state */
+}
+
+/*** SMALL SCREENS ***/
+
+@media (max-width: 600px) {
+  body { padding: 0.5rem; }
+  main { padding: 10px; }
+  table { font-size: 0.8em; }
+  th, td { padding: 6px 5px; }
+}
+
+/* very narrow phones: scroll a table sideways rather than clip it */
+@media (max-width: 359px) {
+  table { display: block; overflow-x: auto; }
 }

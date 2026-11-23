@@ -18,9 +18,9 @@ The middle end includes verified optimization passes, such as inlining, constant
 
 | Frontend | Based on | Verification | Repository |
 |----------|----------|--------------|------------|
-| Rocq | [MetaRocq](https://metarocq.github.io/), [ConCert](https://github.com/AU-COBRA/ConCert) | <span class="ok">verified</span> | [peregrine-tool](https://github.com/peregrine-project/peregrine-tool) |
-| Agda | — | <span class="no">unverified</span> | [agda2lambox](https://github.com/agda/agda2lambox) |
-| Lean | — | <span class="part">partially verified</span> | [lean-to-lambdabox](https://github.com/peregrine-project/lean-to-lambdabox) |
+| Rocq | [MetaRocq](https://metarocq.github.io/), [ConCert](https://github.com/AU-COBRA/ConCert) | **verified** | [peregrine-tool](https://github.com/peregrine-project/peregrine-tool) |
+| Agda | — | unverified | [agda2lambox](https://github.com/agda/agda2lambox) |
+| Lean | — | partially verified | [lean-to-lambdabox](https://github.com/peregrine-project/lean-to-lambdabox) |
 
 ### Backends
 
@@ -28,15 +28,14 @@ All backends are part of [peregrine-tool](https://github.com/peregrine-project/p
 
 | Backend | Based on | Verification |
 |---------|----------|--------------|
-| C | [CertiRocq](https://certicoq.org/), then [CompCert](https://compcert.org/) for x86, ARM, RISC-V | <span class="part">partially verified</span> |
-| Wasm | [CertiRocq-wasm](https://github.com/womeier/certicoqwasm) | <span class="ok">verified</span> |
-| LLVM *(experimental)* | [Vellvm](https://github.com/vellvm/vellvm) | <span class="ok">verified</span> |
-| OCaml | Malfunction | <span class="ok">verified</span> |
-| CakeML | [CakeML](https://cakeml.org/) compiler | <span class="ok">verified</span> |
-| Rust | ConCert | <span class="part">partially verified</span> |
-| Elm | ConCert | <span class="part">partially verified</span> |
-| Lean | — | <span class="no">unverified</span> |
-| F#, Koka *(experimental)* | — | <span class="no">unverified</span> |
+| C | [CertiRocq](https://certicoq.org/), then [CompCert](https://compcert.org/) for x86, ARM, RISC-V | partially verified |
+| Wasm | [CertiRocq-wasm](https://github.com/womeier/certicoqwasm) | **verified** |
+| LLVM | [Vellvm](https://github.com/vellvm/vellvm) | **verified** |
+| OCaml | Malfunction | **verified** |
+| CakeML | [CakeML](https://cakeml.org/) compiler | **verified** |
+| Rust | ConCert | partially verified |
+| Elm | ConCert | partially verified |
+| Lean, F#, Koka *(experimental)* | — | unverified |
 
 [Sources](https://github.com/peregrine-project)
 
