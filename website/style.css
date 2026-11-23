@@ -379,6 +379,8 @@ details[open] .arrow {
 @media (max-width: 600px) {
   body { padding: 0.5rem; }
   main { padding: 10px; }
+  /* keep the centered logo clear of the theme button */
+  header img { max-width: min(300px, calc(100vw - 7.5rem)); }
   table { font-size: 0.8em; }
   th, td { padding: 6px 5px; }
 }
